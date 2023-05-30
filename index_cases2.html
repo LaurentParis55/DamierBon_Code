@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCases2.css">
+    <title> script_js</title>
+</head>
+
+<body>
+<!-- The left div within the canvas -->
+
+    <div id="gamePlace">
+        <canvas id="gameGrid"> </canvas>
+    </div>
+
+<!-- The right div within the inputs and controls for the game -->
+
+    <div id="console">
+
+        <div class="input_group">
+
+            <label for="turn_Number"> TURN NUMBER :</label>
+            <input id="turn_Number" type="text">
+
+            <label for="player"> PLAYER :</label>
+            <input id="player" type="text">
+
+        </div>                   
+
+
+        <div class="input_group">
+
+            <label for="case_origine"> ORIGINE :</label>
+            <input id="case_origine" class="play_clue" type="text" autofocus  onchange= "function chFoc(){document.querySelector('#case_arrivée').focus()}">
+
+            <label for="case_arrivée"> ARRIVÉE</label>
+            <input id="case_arrivée" class="play_clue" type="text" value="0"  oninput="alert('input2')">
+
+
+        </div>
+    </div>
+
+    <script src="cases2.js">       </script>
+</body>
+
+</html>

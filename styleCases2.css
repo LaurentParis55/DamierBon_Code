@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+
+body{width:100vw; height: 100vh; margin:0; padding: 0; overflow: hidden; position:fixed; top:0; left:0; display:flex; justify-content: space-between; align-items: center;}
+
+#gameplace{position:absolute; left:0; top:0}
+
+#console{position:absolute; top:0; left:50%}
+
+canvas{cursor: pointer; position:fixed; top:0; left:0}
+
+input{width:225px; height: 25px; border:1px solid teal; text-align: center;}
+
+.input_group{margin:25px auto; padding: 10px 25px;}
